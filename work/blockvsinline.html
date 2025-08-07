@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #0d1b2a;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+
+        }
+
+        h3 {
+            margin-top: 30px;
+            font-size: 14px;
+            letter-spacing: 1px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        .box1 {
+            background-color: #1b263b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .box {
+            height: 30px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline {
+            display:inline-block;
+
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 50px;
+            height: 150px;
+        }
+
+        .green {
+            width: 120px;
+            background-color: #3ddc97;
+        }
+
+        .purple {
+            width: 150px;
+            background-color: rgb(218, 84, 218);
+        }
+
+        .yellow {
+            width: 90px;
+            background-color: #f6b10f;
+        }
+
+        .blue {
+            width: 180px;
+            background-color: #00b4d8;
+        }
+
+        .heighlight {
+            color: #4cc9f0;
+        }
+
+        .p {
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.967);
+        }
+
+        .text {
+            font-size: 12px;
+            color: #7b8393;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>BLOCK VS INLINE VS INLINE-BLOCK</h3>
+    <div class="container">
+        <div class="box1">
+            <div class="box block green"></div>
+            <div class="box block purple"></div>
+            <div class="box block yellow"></div>
+            <div class="box block blue"></div>
+            <div>display: <span class="heighlight">block;</span></div>
+            <div class="text"> Block elements Stack,regardless of their width.</div>
+
+        </div>
+
+        <div class="box1">
+            <div class="box inline green"></div>
+            <div class="box inline purple"></div>
+            <div class="box inline yellow"></div>
+            <div class="box inline blue"></div>
+            <div> display: <span class="heighlight">inline;</span></div>
+            <div class="text">inline elements flow from one line to the next.</div>
+
+
+        </div>
+
+        <div class="box1">
+            <div class="box inline-block green"></div>
+            <div class="box inline-block purple"></div>
+            <div class="box inline-block yellow"></div>
+            <div class="box inline-block blue"></div>
+            <div>display: <span class="heighlight">inline-block;</span></div>
+            <div class="text">Inline-block allows to set a width and height on the element</div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

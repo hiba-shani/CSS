@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        margin-bottom: 40px;
+    }
+    .container {
+        margin-bottom: 80px;
+    }
+    .example {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background: #f8f8f8;
+        position: relative;
+        overflow: auto;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    .pink { background: pink; top: 20px; left: 20px; }
+    .blue { background: cyan; top: 40px; left: 60px; }
+
+    /* STATIC */
+    .static .blue {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    /* RELATIVE */
+    .relative .blue {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    /* ABSOLUTE */
+    .absolute .blue {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    /* FIXED */
+    .fixed .blue {
+        position: fixed;
+        top: 20px;
+        left: 200px;
+    }
+
+    /* STICKY */
+    .sticky .blue {
+        position: sticky;
+        top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h1>How to use CSS position property</h1>
+
+<div class="container">
+    <h3>Static</h3>
+    <div class="example static">
+        <div class="box pink"></div>
+        <div class="box blue"></div>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Relative</h3>
+    <div class="example relative">
+        <div class="box pink"></div>
+        <div class="box blue"></div>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Absolute</h3>
+    <div class="example absolute">
+        <div class="box pink"></div>
+        <div class="box blue"></div>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Fixed</h3>
+    <div class="example fixed">
+        <div class="box pink"></div>
+        <div class="box blue"></div>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Sticky</h3>
+    <div class="example sticky">
+        <div class="box pink"></div>
+        <div class="box blue"></div>
+    </div>
+</div>
+
+<p style="margin-top:500px;">Scroll down to see Sticky and Fixed behavior</p>
+
+</body>
+</html>
+

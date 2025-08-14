@@ -1,0 +1,15 @@
+:root{
+    --main-color:yellow;
+    --padding-size:10px;
+}
+.box{
+    background-color: var(--main-color);
+    padding:var(--padding-size) ;
+    border: 1px solid blue;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto;
+    width: 300px;
+}
